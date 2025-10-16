@@ -1,0 +1,105 @@
+html {
+background-color: #0069FF;
+color: black;
+font-size: 42px;
+}
+#ul-two {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(10vw, 5vh));
+  grid-gap: 1rem;
+  grid-auto-flow: row;
+    grid-auto-columns: 64%;
+
+
+
+}
+
+li.two
+{
+	list-style: none;
+	box-shadow: -5vh -14vw 5vw #83B6FF;
+	  background-color: black;
+	  opacity: 0.83;
+	border-radius: 5px;
+  grid-row: span 3;
+  color: white;
+}
+
+ul.one > li.two:nth-child(1){
+grid-row: span 3;
+grid-columns: span 6;
+
+}
+
+
+ul {
+  /* autoprefixer: off */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(1fr, 20vh));
+  grid-gap: 1rem;
+  grid-auto-flow: row;
+    grid-auto-rows: 70%;
+
+
+  }
+
+li.one {
+	list-style: none;
+	box-shadow: 10vw 10vw 10vw #0069FF;
+	
+
+	}
+	
+}
+ul.one > li:nth-child(1) {
+  background-color: #CEE3FF;
+
+  grid-row: span 3;
+      grid-column-start: -3;
+      grid-row-start: 2
+}
+
+
+
+ul.one > li:nth-child(2) {
+  background-color: #CEE3FF;
+
+  grid-row: span 4;
+      grid-column-start: -1;
+}
+
+li.one:nth-child(3) {
+  background-color: #CEE3FF;
+
+  grid-column: span 2;
+}
+
+ul.one > li:nth-child(4)  {
+  background-color: #CEE3FF;
+
+	grid-column: 2;
+  grid-row: span 3;
+	
+}
+
+ul.one > li:nth-child(6)  {
+  background-color: #CEE3FF;
+
+
+	
+}
+
+ul.one > li:nth-child(5)  {
+  background-color: #CEE3FF;
+
+
+	grid-column: span 3;
+}
+
+
+ul.one > li:nth-child(8)  {
+  background-color: #CEE3FF;
+
+grid-row: span 10;
+  grid-column: span 5;
+}
